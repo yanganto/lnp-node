@@ -9,3 +9,4 @@
 # Temporary directory for debug data storage
 /data
 /dep_test
+result

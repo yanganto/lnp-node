@@ -1,4 +1,5 @@
 // LNP Node: node running lightning network protocol and generalized lightning
+//
 // channels.
 // Written in 2020-2022 by
 //     Dr. Maxim Orlovsky <orlovsky@lnp-bp.org>
@@ -78,7 +79,7 @@ impl Error {
             Error::Channel(channel::bolt::Error::LifecycleMismatch { .. }) => 2004,
             Error::Channel(channel::bolt::Error::Funding(_)) => 2005,
             Error::Channel(channel::bolt::Error::Route(_)) => 2006,
-            Error::Channel(channel::bolt::Error::NoChanelId) => 2007,
+            Error::Channel(channel::bolt::Error::NoChannelId) => 2007,
             Error::Channel(channel::bolt::Error::NoTemporaryId) => 2008,
             Error::Esb(_) => 3001,
             Error::InvalidState { .. } => 4001,
